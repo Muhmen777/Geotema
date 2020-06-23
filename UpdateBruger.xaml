@@ -1,0 +1,130 @@
+﻿<Window x:Class="GeoTema.UpdateBruger"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoTema"
+        mc:Ignorable="d"
+        Background="DarkBlue"
+        Icon="/PICTURES/icons8-update-80.png"
+        Title="Opdater Bruger" Height="450" Width="300" MinHeight="450" MaxHeight="450" MinWidth="300" MaxWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="Fulde navn"
+            Grid.ColumnSpan="2"
+            Foreground="White"/>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="Brugernavn"
+            Grid.ColumnSpan="2"
+             Foreground="White"/>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="Password"
+            Grid.ColumnSpan="2"
+             Foreground="White"/>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="4"
+            Text="Gentag password"
+            Grid.ColumnSpan="2"
+             Foreground="White"/>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="5"
+            Text="Tildel rettighed"
+            Grid.ColumnSpan="2"
+             Foreground="White"/>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="0"
+            Text="Vælg brugernavn"
+            Grid.ColumnSpan="2"
+            Foreground="White"/>
+
+
+
+        <ComboBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="0,32,0,13"
+            x:Name="Brugercombo" SelectionChanged="Brugercombo_SelectionChanged"
+            />
+
+        <TextBox
+            x:Name="Fuldenavn"
+            Grid.Row="1"
+            Grid.ColumnSpan="2" 
+            Grid.Column="1"
+            Margin="0,20,0,25"
+            />
+
+
+        <TextBox
+            x:Name="Brugernavn"
+            Grid.Row="2"
+            Grid.ColumnSpan="2" 
+            Grid.Column="1"
+            Margin="0,20,0,25"
+            />
+
+
+        <PasswordBox
+            x:Name="Kodeord"
+            Grid.Row="3"
+            Grid.ColumnSpan="2" 
+            Grid.Column="1"
+            Margin="0,20,0,25"
+            />
+
+
+        <PasswordBox
+            x:Name="GentagKodeord"
+            Grid.Row="4"
+            Grid.ColumnSpan="2" 
+            Grid.Column="1"
+            Margin="0,20,0,25"
+            />
+
+
+        <ComboBox
+            x:Name="rettighed"
+            Grid.Column="1"
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            Margin="0,20,0,25"/>
+
+        <Button
+            x:Name="RedigerBruger"
+            Grid.Column="4"
+            Grid.Row="5" 
+            Margin="0,35,17,10" 
+            Grid.ColumnSpan="2"
+            Content="Opdater" Click="RedigerBruger_Click"/>
+    </Grid>
+</Window>
